@@ -1,15 +1,13 @@
-import React from 'react';
-import './App.css';
-import MapComponent from './Map';
+import React from "react";
+import { MapComponent } from "./MapComponent";
 
 function App() {
   return (
     <div className="App">
-      <h1>Google Maps en React + Vite</h1>
+      <h1>Idat GPS</h1>
       <MapComponent />
     </div>
   );
 }
 
 export default App;
-
