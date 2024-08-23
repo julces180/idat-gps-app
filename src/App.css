@@ -1,30 +1,45 @@
+/* App.css */
+
+/* Configuración global */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .app-container {
   display: flex;
-  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
+/* Sidebar en el lado izquierdo */
 .sidebar {
-  width: 250px;
-  background-color: #000; /* Fondo negro */
-  color: #fff; /* Texto en blanco para que contraste */
-  padding: 20px; /* Un poco de espacio interno para el contenido */
-  height: 100vh; /* Asegúrate de que el sidebar ocupe toda la altura de la pantalla */
+  width: 250px; /* Ancho fijo para el sidebar */
+  background-color: #343a40; /* Color dark */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
-
-.content {
-  flex-grow: 1; /* El mapa ocupará el espacio restante */
-  height: 100vh; /* Altura completa de la pantalla */
+/* Contenido principal donde estará el mapa */
+.map-content {
+  flex: 1; /* Ocupa el resto del espacio */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Contenedor del mapa */
 .map-wrapper {
   height: 100%;
   width: 100%;
 }
-.nav-custom{
-  flex-grow: 1;
-  height: 100vh;
+
+#map {
+  height: 100%;
+  width: 100%;
 }
