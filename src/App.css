@@ -1,4 +1,30 @@
-#map {
-	height: 1000px;
-	width: 100%;
+.app-container {
+  display: flex;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto en blanco para que contraste */
+  padding: 20px; /* Un poco de espacio interno para el contenido */
+  height: 100vh; /* Asegúrate de que el sidebar ocupe toda la altura de la pantalla */
+}
+
+
+.content {
+  flex-grow: 1; /* El mapa ocupará el espacio restante */
+  height: 100vh; /* Altura completa de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.nav-custom{
+  flex-grow: 1;
+  height: 100vh;
 }
