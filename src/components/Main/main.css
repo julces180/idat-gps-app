@@ -1,0 +1,26 @@
+.main-container {
+    display: flex;
+    height: 100vh; 
+  }
+  
+  .sidebar {
+    width: 250px;
+    height: 100vh; 
+    background-color: #343a40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .map-container {
+    margin-left: 250px;
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .map-wrapper {
+    height: 100%;
+    width: 100%;
+  }  
